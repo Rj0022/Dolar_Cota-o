@@ -17,9 +17,9 @@ def enviar_email(cotacao):
 
     msg = email.message.Message()
     msg['Subject'] = "Dolar Abaixo De 6$ Reais"
-    msg['From'] = 'rj5206410@gmail.com'
-    msg['To'] = 'jgenese6@gmail.com'
-    password = 'kmtimqitquopuivm' 
+    msg['From'] = 'remetente'
+    msg['To'] = 'destinatario'
+    password = 'senha' #Senha do Gmail 
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email )
 
